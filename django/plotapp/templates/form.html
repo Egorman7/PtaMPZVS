@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTHF-8"/>
+  <title>Diods</title>
+ </head>
+ <body>
+  <form method="POST" action="/alarm/">
+   {% csrf_token %}
+   <label for="func">Enter diods (ex. 01001001)</label>
+   <input id="func" type="text" name="func" maxlength="8"/>
+   <button type="submit">Draw</button>
+  </form>
+ </body>
+</html>

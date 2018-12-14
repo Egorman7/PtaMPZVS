@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions</title>
+</head>
+<body>
+<a href="{% url 'create_func' %}">Add func</a>
+
+	<h3>Functions:</h3>
+	{% for func in funcs %}
+	<p>{{func}}</p>
+	{% endfor %}
+</body>
+</html>

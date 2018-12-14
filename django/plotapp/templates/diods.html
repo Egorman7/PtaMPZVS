@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTHF-8"/>
+  <title>Diods analog</title>
+ </head>
+ <body>
+  <form method="POST" action="/analog/">
+   {% csrf_token %}
+   <h1>Set diods brightnes</h1>
+   <label for="d1">Diod1</label>
+   <input id="d1" type="range" min="0" max="100" step="1" list="tickmarks" name="d1"/></br>
+   <label for="d2">Diod2</label>
+   <input id="d2" type="range" min="0" max="100" step="1" list="tickmarks" name="d2"/></br>
+   <label for="d3">Diod3</label>
+   <input id="d3" type="range" min="0" max="100" step="1" list="tickmarks" name="d3"/></br>
+   <label for="d4">Diod4</label>
+   <input id="d4" type="range" min="0" max="100" step="1" list="tickmarks" name="d4"/></br>
+   <label for="d5">Diod5</label>
+   <input id="d5" type="range" min="0" max="100" step="1" list="tickmarks" name="d5"/></br>
+   <label for="d6">Diod6</label>
+   <input id="d6" type="range" min="0" max="100" step="1" list="tickmarks" name="d6"/></br>
+   <label for="d7">Diod7</label>
+   <input id="d7" type="range" min="0" max="100" step="1" list="tickmarks" name="d7"/></br>
+   <label for="d8">Diod8</label>
+   <input id="d8" type="range" min="0" max="100" step="1" list="tickmarks" name="d8"/></br>
+   <button type="submit">Do it</button>
+  </form>
+<datalist id="tickmarks">
+  <option value="0" label="0%">
+  <option value="10">
+  <option value="20">
+  <option value="30">
+  <option value="40">
+  <option value="50" label="50%">
+  <option value="60">
+  <option value="70">
+  <option value="80">
+  <option value="90">
+  <option value="100" label="100%">
+</datalist>
+ </body>
+</html>
